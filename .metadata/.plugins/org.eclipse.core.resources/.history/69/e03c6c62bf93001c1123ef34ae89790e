@@ -1,0 +1,5 @@
+package com.bookapp.model.entities;
+
+public class Book {
+
+}
