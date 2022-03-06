@@ -1,5 +1,0 @@
-package com.bookapp.model.exceptions;
-
-public class BookNotFoundException {
-
-}

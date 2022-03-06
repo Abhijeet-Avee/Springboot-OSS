@@ -1,9 +1,0 @@
-package com.bookapp.model.persistence;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.bookapp.model.entities.Book;
-
-public interface BookDao extends JpaRepository<Book, Integer>{
-
-}

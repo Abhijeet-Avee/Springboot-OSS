@@ -1,5 +1,0 @@
-package com.bookapp.web.controller;
-
-public class BookRestController {
-
-}

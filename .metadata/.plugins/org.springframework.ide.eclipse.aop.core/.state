@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="bookapp11-security-rest-db"/>
+<aop-project name="bookapp10-security-rest"/>
+<aop-project name="bookapp13-sec-jsp"/>
 <aop-project name="bookapp01"/>
+<aop-project name="bakappV1"/>
+<aop-project name="bankapp-springboot"/>
 </aop-reference-model>
