@@ -8779,3 +8779,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact jstl:jstl:jar
 2022-03-06 21:01:14,776 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2022-03-06 21:01:14,779 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-03-06 21:01:14,779 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-03-06 21:01:14,779 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ve00ym318\Documents\springboot practice\bankapp-springboot\src\test\resources
