@@ -18,12 +18,6 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
-//	@Autowired
-//	public UserServiceImpl(UserDao userDao, PasswordEncoder passwordEncoder) {
-//		this.userDao = userDao;
-//		this.passwordEncoder = passwordEncoder;
-//	}
-	
 	@Override
 	public void addUser(User user) {
 		user.setPassword(passwordEncoder.encode(user.getPassword()));

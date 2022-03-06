@@ -13,6 +13,7 @@ import com.bankapp.model.dao.account.SavingsAccount;
 import com.bankapp.model.dao.account.SavingsAccountDao;
 import com.bankapp.model.dto.AccountDto;
 import com.bankapp.model.exceptions.AccountNotFoundException;
+import com.bankapp.model.service.aspect.RunTimeLogs;
 import com.bankapp.utils.AccountDtoMapper;
 
 @Service
@@ -29,16 +30,19 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public List<SavingsAccount> getAllSavingsAccounts() {
 		return savingsAccountDao.findAll();
 	}
 
 	@Override
+	@RunTimeLogs
 	public List<CurrentAccount> getAllCurrentAccounts() {
 		return currentAccountDao.findAll();
 	}
 
 	@Override
+	@RunTimeLogs
 	public SavingsAccount getSavingAccount(String accountNumber) {
 		SavingsAccount account = savingsAccountDao.findByAccNumber(accountNumber);
 		if(account==null)
@@ -47,6 +51,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public CurrentAccount getCurrentAccount(String accountNumber) {
 		CurrentAccount account = currentAccountDao.findByAccNumber(accountNumber);
 		if(account==null)
@@ -55,18 +60,21 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public SavingsAccount addSavingsAccount(AccountDto accountDto) {
 		SavingsAccount account = AccountDtoMapper.convertToSavingsAccount(accountDto);
 		return savingsAccountDao.save(account);
 	}
 
 	@Override
+	@RunTimeLogs
 	public CurrentAccount addCurrentAccount(AccountDto accountDto) {
 		CurrentAccount account = AccountDtoMapper.convertToCurrentAccount(accountDto);
 		return currentAccountDao.save(account);
 	}
 
 	@Override
+	@RunTimeLogs
 	public SavingsAccount updateSavingsAccount(String accountNumber, AccountDto accountDto) {
 		SavingsAccount account = AccountDtoMapper.convertToSavingsAccount(accountDto);
 		SavingsAccount account2 = savingsAccountDao.findByAccNumber(accountNumber);
@@ -76,6 +84,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public CurrentAccount updateCurrentAccount(String accountNumber, AccountDto accountDto) {
 		CurrentAccount account = AccountDtoMapper.convertToCurrentAccount(accountDto);
 		CurrentAccount account2 = currentAccountDao.findByAccNumber(accountNumber);
@@ -85,6 +94,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public SavingsAccount deleteSavingsAccount(String accountNumber) {
 		SavingsAccount account = savingsAccountDao.findByAccNumber(accountNumber);
 		savingsAccountDao.delete(account);
@@ -92,6 +102,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public CurrentAccount deleteCurrentAccount(String accountNumber) {
 		CurrentAccount account = currentAccountDao.findByAccNumber(accountNumber);
 		currentAccountDao.delete(account);
@@ -99,6 +110,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public void transfer(String fromAccountNum, String toAccountNum, double amount) {
 		Account fromAccount, toAccount;
 		if((fromAccount = savingsAccountDao.findByAccNumber(fromAccountNum))!=null) {
@@ -114,6 +126,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public void deposit(String accountNumber, double amount) {
 		Account account;
 		if((account = savingsAccountDao.findByAccNumber(accountNumber))!=null) {
@@ -126,6 +139,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@RunTimeLogs
 	public void withdraw(String accountNumber, double amount) {
 		Account account;
 		if((account = savingsAccountDao.findByAccNumber(accountNumber))!=null) {
