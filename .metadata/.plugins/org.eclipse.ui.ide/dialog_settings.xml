@@ -112,6 +112,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ve00ym318\Documents\spring practice\mvc7-rest"/>
+			<item value="C:\Users\ve00ym318\Documents\Spring Assignments\02_bookapp_aop"/>
+			<item value="C:\Users\ve00ym318\Documents\bankproject\bakappV2"/>
 			<item value="C:\Users\ve00ym318\Downloads\code_ysmli_jan_2022-master\bankproject"/>
 			<item value="C:\Users\ve00ym318\Documents\new\code_ysmli_jan_2022\springboot\bookapp13-sec-jsp"/>
 		</list>

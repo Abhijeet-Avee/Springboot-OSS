@@ -118,3 +118,7 @@ DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] log.LogFormatUtils (LogForm
 DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:268) - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:119) - Writing [Branch(id=2, name=SBI, ifsc=SBK001, address=xyz street)]
 DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1131) - Completed 201 CREATED
+INFO  | 2022-03-06 21:14:00 | [RMI TCP Connection(2)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2022-03-06 21:14:00 | [RMI TCP Connection(2)-127.0.0.1] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2022-03-06 21:14:00 | [RMI TCP Connection(2)-127.0.0.1] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2022-03-06 21:14:00 | [RMI TCP Connection(2)-127.0.0.1] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,120 @@
+INFO  | 2022-03-06 20:52:36 | [restartedMain] boot.StartupInfoLogger (StartupInfoLogger.java:55) - Starting BankappSpringbootApplication using Java 1.8.0_261 on SJ000075 with PID 7908 (C:\Users\ve00ym318\Documents\springboot practice\bankapp-springboot\target\classes started by VE00YM318 in C:\Users\ve00ym318\Documents\springboot practice\bankapp-springboot)
+INFO  | 2022-03-06 20:52:36 | [restartedMain] boot.SpringApplication (SpringApplication.java:640) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2022-03-06 20:52:36 | [restartedMain] logging.DeferredLog (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  | 2022-03-06 20:52:36 | [restartedMain] logging.DeferredLog (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  | 2022-03-06 20:52:36 | [restartedMain] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2022-03-06 20:52:36 | [restartedMain] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+INFO  | 2022-03-06 20:52:37 | [restartedMain] tomcat.TomcatWebServer (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8090 (http)
+INFO  | 2022-03-06 20:52:37 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2022-03-06 20:52:37 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2022-03-06 20:52:37 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.58]
+INFO  | 2022-03-06 20:52:37 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2022-03-06 20:52:37 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2022-03-06 20:52:37 | [restartedMain] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1353 ms
+INFO  | 2022-03-06 20:52:37 | [restartedMain] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2022-03-06 20:52:37 | [restartedMain] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2022-03-06 20:52:38 | [restartedMain] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2022-03-06 20:52:39 | [restartedMain] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  | 2022-03-06 20:52:39 | [restartedMain] web.DefaultSecurityFilterChain (DefaultSecurityFilterChain.java:52) - Will not secure any request
+DEBUG | 2022-03-06 20:52:39 | [restartedMain] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:625) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2022-03-06 20:52:39 | [restartedMain] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:367) - 17 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2022-03-06 20:52:39 | [restartedMain] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:188) - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+WARN  | 2022-03-06 20:52:39 | [restartedMain] support.AbstractApplicationContext (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class com.bankapp.model.exceptions.AccountNotFoundException]: {public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle404Error(com.bankapp.model.exceptions.AccountNotFoundException), public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle500Error(java.lang.Exception)}
+INFO  | 2022-03-06 20:52:39 | [restartedMain] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2022-03-06 20:52:39 | [restartedMain] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2022-03-06 20:52:39 | [restartedMain] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2022-03-06 20:52:39 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Stopping service [Tomcat]
+INFO  | 2022-03-06 20:52:39 | [restartedMain] logging.ConditionEvaluationReportLoggingListener (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR | 2022-03-06 20:52:39 | [restartedMain] boot.SpringApplication (SpringApplication.java:830) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class com.bankapp.model.exceptions.AccountNotFoundException]: {public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle404Error(com.bankapp.model.exceptions.AccountNotFoundException), public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle500Error(java.lang.Exception)}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.4.jar:2.6.4]
+	at com.bankapp.BankappSpringbootApplication.main(BankappSpringbootApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_261]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.6.4.jar:2.6.4]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception; nested exception is java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class com.bankapp.model.exceptions.AccountNotFoundException]: {public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle404Error(com.bankapp.model.exceptions.AccountNotFoundException), public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle500Error(java.lang.Exception)}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.16.jar:5.3.16]
+	... 24 more
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class com.bankapp.model.exceptions.AccountNotFoundException]: {public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle404Error(com.bankapp.model.exceptions.AccountNotFoundException), public org.springframework.http.ResponseEntity com.bankapp.web.ex_handler.CustomExceptionHandler.handle500Error(java.lang.Exception)}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:291) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:268) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1090) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1032) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_261]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.16.jar:5.3.16]
+	... 24 more
+INFO  | 2022-03-06 21:01:26 | [restartedMain] boot.StartupInfoLogger (StartupInfoLogger.java:55) - Starting BankappSpringbootApplication using Java 1.8.0_261 on SJ000075 with PID 26148 (C:\Users\ve00ym318\Documents\springboot practice\bankapp-springboot\target\classes started by VE00YM318 in C:\Users\ve00ym318\Documents\springboot practice\bankapp-springboot)
+INFO  | 2022-03-06 21:01:26 | [restartedMain] boot.SpringApplication (SpringApplication.java:640) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2022-03-06 21:01:26 | [restartedMain] logging.DeferredLog (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  | 2022-03-06 21:01:26 | [restartedMain] logging.DeferredLog (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  | 2022-03-06 21:01:26 | [restartedMain] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2022-03-06 21:01:26 | [restartedMain] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+INFO  | 2022-03-06 21:01:27 | [restartedMain] tomcat.TomcatWebServer (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8090 (http)
+INFO  | 2022-03-06 21:01:27 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2022-03-06 21:01:27 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2022-03-06 21:01:27 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.58]
+INFO  | 2022-03-06 21:01:27 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2022-03-06 21:01:27 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2022-03-06 21:01:27 | [restartedMain] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1286 ms
+INFO  | 2022-03-06 21:01:27 | [restartedMain] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2022-03-06 21:01:27 | [restartedMain] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2022-03-06 21:01:28 | [restartedMain] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2022-03-06 21:01:28 | [restartedMain] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  | 2022-03-06 21:01:28 | [restartedMain] web.DefaultSecurityFilterChain (DefaultSecurityFilterChain.java:52) - Will not secure any request
+DEBUG | 2022-03-06 21:01:29 | [restartedMain] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:625) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2022-03-06 21:01:29 | [restartedMain] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:367) - 17 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2022-03-06 21:01:29 | [restartedMain] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:188) - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG | 2022-03-06 21:01:29 | [restartedMain] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:307) - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2022-03-06 21:01:29 | [restartedMain] autoconfigure.OptionalLiveReloadServer (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+INFO  | 2022-03-06 21:01:29 | [restartedMain] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2022-03-06 21:01:29 | [restartedMain] tomcat.TomcatWebServer (TomcatWebServer.java:220) - Tomcat started on port(s): 8090 (http) with context path '/bankapp'
+INFO  | 2022-03-06 21:01:29 | [restartedMain] boot.StartupInfoLogger (StartupInfoLogger.java:61) - Started BankappSpringbootApplication in 3.557 seconds (JVM running for 4.812)
+INFO  | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.DispatcherServlet (DispatcherServlet.java:520) - Detected StandardServletMultipartResolver
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.DispatcherServlet (DispatcherServlet.java:544) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.DispatcherServlet (DispatcherServlet.java:569) - Detected FixedThemeResolver
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.DispatcherServlet (DispatcherServlet.java:719) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c0d79f1
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.DispatcherServlet (DispatcherServlet.java:783) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@79c0bec4
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:542) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:547) - Completed initialization in 2 ms
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:119) - GET "/bankapp/api/branches", parameters={}
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:522) - Mapped to com.bankapp.web.controller.BranchRestController#getAll()
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:268) - Using 'application/json', given [*/*] and supported [application/json]
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:119) - Writing [[Branch(id=1, name=RBI, ifsc=BHJ001, address=abc street)]]
+DEBUG | 2022-03-06 21:04:27 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:1131) - Completed 200 OK
+DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:119) - POST "/bankapp/api/branches", parameters={}
+DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:522) - Mapped to com.bankapp.web.controller.BranchRestController#addBranch(Branch)
+DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:119) - Read "application/json;charset=UTF-8" to [Branch(id=null, name=SBI, ifsc=SBK001, address=xyz street)]
+DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:268) - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:119) - Writing [Branch(id=2, name=SBI, ifsc=SBK001, address=xyz street)]
+DEBUG | 2022-03-06 21:05:12 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1131) - Completed 201 CREATED
